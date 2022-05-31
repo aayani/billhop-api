@@ -1,5 +1,25 @@
 const VOWELS = ['a', 'e', 'i', 'o', 'u']
-const SPECIAL_CHARS = ["'", ' ', '"', '?', '!', ',', '.']
+const SPECIAL_CHARS = [
+  "'",
+  ' ',
+  '"',
+  '?',
+  '!',
+  ',',
+  '.',
+  '@',
+  '#',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  '0',
+]
 
 export const translate = (sentence = ''): string => {
   const translation: string[] = []
