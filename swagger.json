@@ -1,0 +1,80 @@
+{
+  "swagger": "2.0",
+  "title": "billhop-api",
+  "description": "This is a sample API for translations.",
+  "paths": {
+    "/translate/normal": {
+      "post": {
+        "summary": "Get your sentence done in Rövarspråk",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "payload",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "example": "Hello I'm a pirate"
+                }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad or no text provided"
+          }
+        }
+      }
+    },
+    "/translate/rovarsprak": {
+      "post": {
+        "summary": "Reverse your sentence from Rövarspråk",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "payload",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "example": "HoHelollolo I'mom a popiroratote"
+                }
+              }
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad or no text provided"
+          }
+        }
+      }
+    },
+    "/translate/joke": {
+      "get": {
+        "summary": "Get joke in Rövarspråk",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
