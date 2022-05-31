@@ -28,7 +28,7 @@ describe('routes', () => {
           validateRequestBody({} as any, mockRes as any, mockNext)
         })
 
-        it('calls the next(...) function', () => {
+        it('calls the res.status(...) function', () => {
           expect(mockRes.status).toHaveBeenCalledTimes(1)
         })
       })

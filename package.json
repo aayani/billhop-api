@@ -14,6 +14,7 @@
     "start": "node dist",
     "start:prod": "yarn clean && yarn build && NODE_ENV=production yarn start",
     "start:dev": "NODE_ENV=development nodemon --ext ts --watch src --exec ts-node src/index.ts --inspect",
+    "test": "NODE_ENV=test yarn test:unit",
     "test:unit": "jest src/**/*.spec.ts src/**/**/*.spec.ts"
   },
   "dependencies": {

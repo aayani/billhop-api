@@ -15,7 +15,7 @@ Before running the project on your system, make sure you have the following soft
 
 ### Installing
 
-First, make sure to install are the required dependencies using `yarn`. The program can then be run in "development" mode for testing and development purposes using the following command:
+First, make sure to install all the required dependencies using `yarn`. The program can then be run in "development" mode for testing and development purposes using the following command:
 
 ```sh
 yarn start:dev
